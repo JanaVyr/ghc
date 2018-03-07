@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="index.css">
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
-{% block content %}{% endblock %}
-{#
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS and your own script at the end -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script>
-#}
+    <header>
+        <img src="svg\logo.svg" style="width:100px" alt="logo svg">
+    </header>
+    <nav class="container">
+        <ul class="nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Coffee</a>
+            </li>
+            <li>
+                <a href="#">Our story</a>
+            </li>
+        </ul>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer container">
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Coffee</a>
+                </li>
+                <li>
+                    <a href="#">Our story</a>
+                </li>
+            </ul>
+        </nav>
+        <p>#hipstersmakecoffee</p>
+        <p>Follow us on Twitter and Instagram</p>
+    </footer>
+    {#
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS and your own script at the end -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    #}
 </body>
+
 </html>
