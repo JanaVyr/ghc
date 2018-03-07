@@ -149,7 +149,8 @@ gulp.task(
                         // shows file named another-page.html
                         extensions: ['html']
                     }
-                }
+                },
+                port: 8585
             });
             gulp.watch('src/scss/**/*', gulp.series('css:compile')); // watch for changes in SCSS
             gulp.watch('src/templates/**/*', gulp.series('html:compile')); // watch for changes in templates
