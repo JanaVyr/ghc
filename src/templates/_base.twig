@@ -13,40 +13,14 @@
             <img src="/svg/logo.svg" style="width:100px" alt="">
         </header>
         <nav class="container">
-            <ul class="nav">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Coffee</a>
-                </li>
-                <li>
-                    <a href="#">Our story</a>
-                </li>
-            </ul>
+            {% include "__navigation.twig" %}
         </nav>
 
         {% block content %}{% endblock %}
 
         <footer class="footer container">
             <nav>
-                <ul class="nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#">Coffee</a>
-                    </li>
-                    <li>
-                        <a href="#">Our story</a>
-                    </li>
-                </ul>
+                {% include "__navigation.twig" %}
             </nav>
             <p>#hipstersmakecoffee</p>
             <p>Follow us on Twitter and Instagram</p>
