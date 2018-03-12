@@ -13,6 +13,13 @@
                 <p>You can currently buy these beans in 350g bags.</p>
             </div>
             <div class="row">
+                {% for coffee in coffees %}
+                    {# for example #}
+                    <h2>{{ coffee.name }} {{ coffee.origin }}</h2>
+                    {# everything else #}
+                    <pre>{{ dump(coffee) }}</pre>
+                {% endfor %}
+
                 <div class="col-lg-6">
                     <h2>Quejina (Guatemala)</h2>
                     <img src="/img/smcr-quejina.jpg" class="img-fluid" alt="">
