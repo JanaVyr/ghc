@@ -9,18 +9,20 @@
     </head>
 
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand navbar-light justify-content-between flex-column flex-sm-row">
-                <a class="navbar-brand" href="/">
-                    <img src="/svg/logo.svg" width="100" height="100" alt="">
-                </a>
-                <ul class="navbar-nav justify-content-center flex-row">
-                    {% include "__navigation.twig" %}
-                </ul>
-            </nav>
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <nav class="navbar navbar-expand navbar-light justify-content-between flex-column flex-sm-row">
+                    <a class="navbar-brand" href="/">
+                        <img src="/svg/logo.svg" width="100" height="100" alt="">
+                    </a>
+                    <ul class="navbar-nav justify-content-center flex-row">
+                        {% include "__navigation.twig" %}
+                    </ul>
+                </nav>
+            </div>
         </div>
         {% block content %}{% endblock %}
-        <footer class="footer container text-center">
+        <footer class="text-center bg-dark text-white">
             <nav>
                 <ul class="nav justify-content-center">
                     {% include "__navigation.twig" %}
