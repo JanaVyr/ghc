@@ -1,11 +1,14 @@
 {% extends '_base.twig' %}
 
+{% block navigation %}
+    {% include "__navigation.twig" with {'menu': 'active'} %}
+{% endblock %}
 
 {% block title %}Menu – {{ parent() }}{% endblock %}
 
 
 {% block content %}
-    <main class="main">
+    <main class="main mt-4">
         <div class="container">
             <div>
                 <h1 class="text-uppercase">Menu</h1>
@@ -13,321 +16,322 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="text-uppercase">Espresso Coffee</h2>
-                    <ul>
-                        <li class="row">
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Espresso</span>
-                            <span class="col text-right">3.8</span>
+                            <span class="col-3">3.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Double espresso</span>
-                            <span class="col text-right">4.9</span>
+                            <span class="col-3">4.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Americano</span>
-                            <span class="col text-right">5</span>
+                            <span class="col-3">5.0</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Espresso machiato</span>
-                            <span class="col text-right">4.3</span>
+                            <span class="col-3">4.3</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cappuccino</span>
-                            <span class="col text-right">5.2</span>
+                            <span class="col-3">5.2</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Flat White</span>
-                            <span class="col text-right">5.9</span>
+                            <span class="col-3">5.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Latte</span>
-                            <span class="col text-right">5.9</span>
+                            <span class="col-3">5.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Espresso</span>
-                            <span class="col text-right">3.8</span>
+                            <span class="col-3">3.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Extra shot</span>
-                            <span class="col text-right">1.1</span>
+                            <span class="col-3">1.1</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-uppercase">Filter Coffee</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4 mt-md-0">Filter Coffee</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">House Drip Coffee</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Aeropress</span>
-                            <span class="col text-right">5.5</span>
+                            <span class="col-3">5.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">V60</span>
-                            <span class="col text-right">6.5</span>
+                            <span class="col-3">6.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Kalita</span>
-                            <span class="col text-right">12</span>
+                            <span class="col-3">12.0</span>
                         </li>
                     </ul>
-                    <h2 class="text-uppercase">Coffee Specialites</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4">Coffee Specialites</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cascara</span>
-                            <span class="col text-right">4.9</span>
+                            <span class="col-3">4.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Irish coffee</span>
-                            <span class="col text-right">10.9</span>
+                            <span class="col-3">10.9</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h2 class="text-uppercase">Iced</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4">Iced</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced Latte</span>
-                            <span class="col text-right">6.9</span>
+                            <span class="col-3">6.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Espresso on the rock</span>
-                            <span class="col text-right">4.9</span>
+                            <span class="col-3">4.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced Cascara</span>
-                            <span class="col text-right">5.5</span>
+                            <span class="col-3">5.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Affogato</span>
-                            <span class="col text-right">5.9</span>
+                            <span class="col-3">5.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced Flat white</span>
-                            <span class="col text-right">5.9</span>
+                            <span class="col-3">5.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced Filter</span>
-                            <span class="col text-right">5.8</span>
+                            <span class="col-3">5.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced tea</span>
-                            <span class="col text-right">4.9</span>
+                            <span class="col-3">4.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Iced chocolate</span>
-                            <span class="col text-right">6.2</span>
+                            <span class="col-3">6.2</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-uppercase">Hot</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4">Hot</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Tea</span>
-                            <span class="col text-right">4.9</span>
+                            <span class="col-3">4.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Ginger tea</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Hot chocolate</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <h2 class="text-uppercase">Non-alcoholic Beverages</h2>
+            <h2 class="text-uppercase my-4">Non-alcoholic Beverages</h2>
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="text-uppercase">Lemonades</h3>
-                    <ul>
-                        <li class="row">
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Fresh Squeezed Lemonade</span>
-                            <span class="col text-right">5</span>
+                            <span class="col-3">5.0</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Ginger Lemonade</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cascara Fizz Original</span>
-                            <span class="col text-right">5.8</span>
+                            <span class="col-3">5.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Club-mate Cola</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Tonic Thomas Henry</span>
-                            <span class="col text-right">4.3</span>
+                            <span class="col-3">4.3</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-uppercase">Water</h3>
-                    <ul>
-                        <li class="row">
+                    <h3 class="text-uppercase mt-4">Water</h3>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Sparkling</span>
-                            <span class="col text-right">2.4</span>
+                            <span class="col-3">2.4</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Still</span>
-                            <span class="col text-right">2.4</span>
+                            <span class="col-3">2.4</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <h2 class="text-uppercase">Alcoholic Beverages</h2>
+            <h2 class="text-uppercase my-4">Alcoholic Beverages</h2>
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="text-uppercase">Beer</h3>
-                    <ul>
-                        <li class="row">
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Small breweries on tap</span>
-                            <span class="col text-right">3.5</span>
+                            <span class="col-3">3.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Birell (bottled)</span>
-                            <span class="col text-right">3.5</span>
+                            <span class="col-3">3.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cider Magnetic Apple</span>
-                            <span class="col text-right">4.5</span>
+                            <span class="col-3">4.5</span>
                         </li>
                     </ul>
-                    <h3>White Wine</h3>
-                    <ul>
-                        <li class="row">
+                    <h3 class="text-uppercase mt-4">White Wine</h3>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Chardonnay Les Vignes de L'Arque, France</span>
-                            <span class="col text-right">3.5</span>
+                            <span class="col-3">3.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Sauvignon Blanc, Château Le Sartre Blanc 2011</span>
-                            <span class="col text-right">3.8</span>
+                            <span class="col-3">3.8</span>
                         </li>
                     </ul>
-                    <h3 class="text-uppercase">Red Wine</h3>
-                    <ul>
-                        <li class="row">
+                    <h3 class="text-uppercase mt-4">Red Wine</h3>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cuvée Côtes du Rhône Vigneros de Caracterem</span>
-                            <span class="col text-right">3.5</span>
+                            <span class="col-3">3.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cabernet Sauvignon, Château Tour du Roch-Milon 2011</span>
-                            <span class="col text-right">3.5</span>
+                            <span class="col-3">3.5</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-uppercase">Cocktails</h3>
-                    <ul>
-                        <li class="row">
+                    <h3 class="text-uppercase mt-4 mt-md-0">Cocktails</h3>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Gin Tonic</span>
-                            <span class="col text-right">9</span>
+                            <span class="col-3">9.0</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Cuba Libre</span>
-                            <span class="col text-right">9.9</span>
+                            <span class="col-3">9.9</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Mojito</span>
-                            <span class="col text-right">9.9</span>
+                            <span class="col-3">9.9</span>
                         </li>
                     </ul>
-                    <h3 class="text-uppercase">Spirits</h3>
-                    <ul>
-                        <li class="row">
+                    <h3 class="text-uppercase mt-4">Spirits</h3>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Metaxa 12*</span>
-                            <span class="col text-right">7.5</span>
+                            <span class="col-3">7.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Tullamore Dew</span>
-                            <span class="col text-right">6.5</span>
+                            <span class="col-3">6.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Jameson Whiskey</span>
-                            <span class="col text-right">6.5</span>
+                            <span class="col-3">6.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Bombay, Añejo Suave</span>
-                            <span class="col text-right">6.8</span>
+                            <span class="col-3">6.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Ron Cubay, Añejo Suave</span>
-                            <span class="col text-right">6.5</span>
+                            <span class="col-3">6.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Tequila, El Jimador, Reposado</span>
-                            <span class="col text-right">6.2</span>
+                            <span class="col-3">6.2</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Vodka Finlandia</span>
-                            <span class="col text-right">5.5</span>
+                            <span class="col-3">5.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Bailey's</span>
-                            <span class="col text-right">5.5</span>
+                            <span class="col-3">5.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Jagermeister</span>
-                            <span class="col text-right">5.5</span>
+                            <span class="col-3">5.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Graham's Tawny Porto</span>
-                            <span class="col text-right">4.7</span>
+                            <span class="col-3">4.7</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h2 class="text-uppercase">Something To Eat</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4">Something To Eat</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Soup of the day</span>
-                            <span class="col text-right">5.8</span>
+                            <span class="col-3">5.8</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Chipotle Citrus Chicken Sandwich</span>
-                            <span class="col text-right">5.4</span>
+                            <span class="col-3">5.4</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Avocado Toast</span>
-                            <span class="col text-right">5.6</span>
+                            <span class="col-3">5.6</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Super BLT Sandwich</span>
-                            <span class="col text-right">12.8</span>
+                            <span class="col-3">12.8</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-uppercase">Sweets</h2>
-                    <ul>
-                        <li class="row">
+                    <h2 class="text-uppercase mt-4">Sweets</h2>
+                    <ul class="pl-0">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Homemade cakes of the day</span>
-                            <span class="col text-right">5</span>
+                            <span class="col-3">5.0</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Key Lime and Coconut</span>
-                            <span class="col text-right">1.5</span>
+                            <span class="col-3">1.5</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Icecream</span>
-                            <span class="col text-right">2</span>
+                            <span class="col-3">2.0</span>
                         </li>
-                        <li class="row">
+                        <li class="row ghc-mb-2_5">
                             <span class="col">Tiramisu</span>
-                            <span class="col text-right">6</span>
+                            <span class="col-3">6.0</span>
                         </li>
                     </ul>
                 </div>
             </div>
+            <img src="/img/espresso-machine-detail.jpg" class="img-fluid ghc-mb--50px mt-2" alt="Espresso machine">
         </div>
     </main>
 {% endblock %}
