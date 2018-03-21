@@ -8,14 +8,11 @@
 
 
 {% block content %}
-<main class="main mt-4">
-    <div class="container">
-        <div>
+    <main class="main mt-4">
+        <div class="container">
             <h1 class="text-uppercase">Coffee</h1>
             <p class="lead">We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never boring. We bring you the best from leading european specialty roasteries, currently mostly from <a href="https://shop.squaremilecoffee.com">Square Mile Coffee Roasters</a>, a multi award winning coffee roasting company based in East London.</p>
             <p>You can currently buy these beans in 350g bags.</p>
-        </div>
-        <div class="row mr-0 ml-0">
             <div class="card-deck">
                 {% for coffee in coffees %}
                     {% if loop.index0%2 == 0 %}
@@ -32,6 +29,5 @@
                 {% endfor %}
             </div>
         </div>
-    </div>
-</main>
+    </main>
 {% endblock %}
