@@ -1,4 +1,7 @@
 {% extends '_base.twig' %}
+{% block navigation %}
+    {% include "__navigation.twig" with {'home': 'active'} %}
+{% endblock %}
 
 
 {% block content %}
