@@ -1,0 +1,21 @@
+.ghc-mb-2_5 {
+    margin-bottom: $spacer * 0.625;
+}
+
+.ghc-logo {
+    width: 150px;
+    @include media-breakpoint-down(xs) {
+        width: 100px;
+    }
+}
+
+.ghc-letter-spacing-1_5 {
+    letter-spacing: 1.5px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
