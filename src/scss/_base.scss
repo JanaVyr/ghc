@@ -1,3 +1,8 @@
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: $ghc-letter-spacing;
+}
+
 .ghc-mb-2_5 {
     margin-bottom: $spacer * 0.625;
 }
@@ -7,10 +12,6 @@
     @include media-breakpoint-down(xs) {
         width: 100px;
     }
-}
-
-.ghc-letter-spacing-1_5 {
-    letter-spacing: 1.5px;
 }
 
 .ghc-mb--50px {
