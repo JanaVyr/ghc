@@ -3,6 +3,12 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.07em;
 }
 
+.navbar {
+    @media (max-width: 600px), (max-height: 600px) {
+        position: static;
+    }
+}
+
 .ghc-mb-2_5 {
     margin-bottom: $spacer * 0.625;
 }
