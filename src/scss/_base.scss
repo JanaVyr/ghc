@@ -9,15 +9,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.ghc-mb-2_5 {
-    margin-bottom: $spacer * 0.625;
+.navbar-brand {
+    width: 150px;
+     @include media-breakpoint-down(xs) {
+        width: 100px;
+    }
 }
 
 .ghc-logo {
     width: 100%;
-    @include media-breakpoint-down(xs) {
-        width: 70%;
-    }
+}
+
+.ghc-mb-2_5 {
+    margin-bottom: $spacer * 0.625;
 }
 
 .ghc-mb--50px {
