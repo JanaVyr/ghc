@@ -327,7 +327,25 @@
                     </ul>
                 </div>
             </div>
-            <img src="/img/espresso-machine-detail.jpg" class="img-fluid ghc-mb--50px mt-4" alt="Espresso machine">
+            <img
+                class="img-fluid ghc-mb--50px mt-4"
+                sizes="(min-width: 1200px) 1090px,
+                        (min-width: 992px) 910px,
+                        (min-width: 768px) 670px,
+                        (min-width: 576px) 490px,
+                        calc(100vw - 2*25)
+                        "
+                                srcset="
+                /img/espresso-machine-detail_rjet0q_c_scale,w_270.jpg 270w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_828.jpg 828w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_1222.jpg 1222w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_1507.jpg 1507w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_1756.jpg 1756w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_1967.jpg 1967w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_2154.jpg 2154w,
+                /img/espresso-machine-detail_rjet0q_c_scale,w_2180.jpg 2180w"
+                src="/img/espresso-machine-detail_rjet0q_c_scale,w_2180.jpg"
+                alt="Espresso machine deatil">
         </div>
     </main>
 {% endblock %}
