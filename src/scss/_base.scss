@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ghc-logo {
-    width: 150px;
+    width: 100%;
     @include media-breakpoint-down(xs) {
-        width: 100px;
+        width: 70%;
     }
 }
 
