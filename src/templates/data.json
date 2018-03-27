@@ -46,7 +46,12 @@
       "tastingNotes": "The tasty Colombians just keep coming! From the aptly named El Eden in Huila this coffee produces a subtle, grown-up cup with notes of pear and dried currant complemented by nutty undertones of pecans and hazelnuts.",
       "description": "Hugo Gonzales has called his farm El Eden, and indeed it is a beautiful place, high in the of Huila, one of our favourite Colombian regions. Of the six hectares he owns, just over half is planted with coffee, while the rest is dragonfruit trees and native forest. Hugo considers the beauty of his surroundings to be the reason his coffee is so good, possibly helped by artefacts rumoured to be buried deep underground on his land. He has never bothered to dig for them, but believes they help his coffee taste like gold. From a long line of coffee farmers, Hugo and his wife Claribel manage the post harvest process while their three grown children look after the harvesting. They enjoy experimenting and innovating in the processes at the farm, always searching for knowledge and opportunities to study coffee and agriculture.",
       "price": "13",
-      "image": "smcr-el-eden.jpg",
+      "imageSlug": "smcr-el-eden",
+      "imageSizes": [
+        "270",
+        "580",
+        "1000"
+      ],
       "featured": "false"
     },
     {
@@ -64,7 +69,12 @@
       "tastingNotes": "We went back and forth for longer than usual debating the tasting notes for this coffee as there is so much in there trying to get out. Fresh citrus, warming spicy notes, delicate acidity, heavy sweetness, and a sparkly edge - how are we meant to fit that into just three words!",
       "description": "The Gakenke washing station was built in 1991 in Gatare, Kayanza in the north of Burundi and is named after a plant found in the region, whose thin, hollow stems are used as straws to drink the locally made banana beer. Burundi is a country of small coffee farms, and Gakenke receives or collects the cherry from nearly 2,700 smallholders in the surrounding hills. The washing station is run by Gratien Nankwahombaye who has been there since 2013, overseeing the receiving, pulping, fermenting and drying of the entire harvest. As part of the Greenco export group, Gakenke seeks to secure the future of their community through education and development, and coffee is both a livelihood and a vessel to achieve this.",
       "price": "13.5",
-      "image": "smcr-gakenke.jpg",
+      "imageSlug": "smcr-gakenke",
+      "imageSizes": [
+        "270",
+        "640",
+        "1000"
+      ],
       "featured": "false"
     },
     {
@@ -82,7 +92,12 @@
       "tastingNotes": "A fruit punch of a coffee to start our Colombian offerings! Vibrant, jammy fruit flavours of apricot and blackberry dominate, with gentle florals underlying these bold notes.",
       "description": "This lot from Nariño was so delicious on the cupping table and we immediately signed up for 10 bags of it, which is as much as we could get! From the Tablón de Gómez Municipality, or El Tablón as people in the region call it, comes this Caturra from Marco Tulio Adarme and his partner Bella Muñoz. El Tablon is a small community nestled in the Macizo Colombiano, with a strong indigenous influence and culture. Tulio’s 3 hectare farm El Pedregal (translating to The Scree) is unusual in that it sits at a dizzying 2,130 meters above sea level, this creates a special microclimate that results in slow growth and maturation, which helps intensify the flavours in the beans. Even processing and drying the coffee takes longer at these altitudes, on raised beds the washed coffee needs 20-30 days to dry, almost 2 weeks more than at your average farm!",
       "price": "13",
-      "image": "smcr-el-pedregal.jpg",
+      "imageSlug": "smcr-el-pedregal",
+      "imageSizes": [
+        "270",
+        "620",
+        "1000"
+      ],
       "featured": "true"
     },
     {
@@ -100,7 +115,12 @@
       "tastingNotes": "Big, bold, stone fruit flavours dominate this cup with a dash of fresh grape for good measure. The result is a syrupy treat of a coffee and a banging start to this year's Ecuador offerings!",
       "description": "We’re excited to kick off Ecuador season with a lovely little lot from Luis Abad in the canton of Zumba of the Zamora-Chichipe province. Luis’ farm, La Chorrera (The Stream), is only three hectares in size, but so are most of the farms in the area, the biggest of his neighbours farming only five hectares. To get to Luis’ farm you drive two hours from the nearest town, then walk for three hours through jungle and untouched forest; a highly biodiverse landscape with natural resources in abundance. In such a remote region coffee grows in harmony with its surroundings, and access to equipment and technology can be a challenge. We’re excited to see how the coffees from this exotic area of Ecuador will continue to improve and reach speciality coffee buyers all over the world!",
       "price": "17",
-      "image": "smcr-la-chorrera.jpg",
+      "imageSlug": "smcr-la-chorrera",
+      "imageSizes": [
+        "270",
+        "530",
+        "1000"
+      ],
       "featured": "false"
     }
   ]
