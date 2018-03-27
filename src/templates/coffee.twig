@@ -20,7 +20,18 @@
                     {% endif %}
                     <div class="card border-0 mb-4">
                         <h2 class="h3 card-header text-uppercase">{{ coffee.name }} ({{ coffee.origin }})</h2>
-                        <img src="/img/{{ coffee.image }}" class="card-img-top" alt="">
+                        <img
+                            class="card-img-top"
+                            sizes="(min-width: 960px) 520px,
+                                    (min-width: 794px) 430px,
+                                    (min-width: 615px) 310px,
+                                    calc(100vw - 2*25)"
+                            srcset="
+                            {% for imageSize in coffee.imageSizes %}
+                                /img/{{ coffee.imageSlug }}{{ imageSize }}.jpg {{ imageSize }}w{% if not loop.last %},{% endif %}
+                            {% endfor %}"
+                            src="/img/{{ coffee.imageSlug }}{{coffee.imageSizes|last}}.jpg"
+                            alt="">
                         <div class="card-body bg-light">
                             <p class="font-italic">{{ coffee.tastes|join(" / ")|lower }}</p>
                             <p>{{ coffee.tastingNotes }}</p>

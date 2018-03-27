@@ -71,10 +71,12 @@
       "tastingNotes": "We went back and forth for longer than usual debating the tasting notes for this coffee as there is so much in there trying to get out. Fresh citrus, warming spicy notes, delicate acidity, heavy sweetness, and a sparkly edge - how are we meant to fit that into just three words!",
       "description": "The Gakenke washing station was built in 1991 in Gatare, Kayanza in the north of Burundi and is named after a plant found in the region, whose thin, hollow stems are used as straws to drink the locally made banana beer. Burundi is a country of small coffee farms, and Gakenke receives or collects the cherry from nearly 2,700 smallholders in the surrounding hills. The washing station is run by Gratien Nankwahombaye who has been there since 2013, overseeing the receiving, pulping, fermenting and drying of the entire harvest. As part of the Greenco export group, Gakenke seeks to secure the future of their community through education and development, and coffee is both a livelihood and a vessel to achieve this.",
       "price": "13.5",
-      "imageSlug": "smcr-gakenke",
+      "imageSlug": "smrc-gakenke_mmqxjw_c_scale,w_",
       "imageSizes": [
-        "270",
-        "640",
+        "200",
+        "409",
+        "558",
+        "681",
         "1000"
       ],
       "featured": "false"
@@ -94,12 +96,12 @@
       "tastingNotes": "A fruit punch of a coffee to start our Colombian offerings! Vibrant, jammy fruit flavours of apricot and blackberry dominate, with gentle florals underlying these bold notes.",
       "description": "This lot from Nariño was so delicious on the cupping table and we immediately signed up for 10 bags of it, which is as much as we could get! From the Tablón de Gómez Municipality, or El Tablón as people in the region call it, comes this Caturra from Marco Tulio Adarme and his partner Bella Muñoz. El Tablon is a small community nestled in the Macizo Colombiano, with a strong indigenous influence and culture. Tulio’s 3 hectare farm El Pedregal (translating to The Scree) is unusual in that it sits at a dizzying 2,130 meters above sea level, this creates a special microclimate that results in slow growth and maturation, which helps intensify the flavours in the beans. Even processing and drying the coffee takes longer at these altitudes, on raised beds the washed coffee needs 20-30 days to dry, almost 2 weeks more than at your average farm!",
       "price": "13",
-      "imageSlug": "smrc-el-pedrgal_obl9bv_c_scale,w_",
+      "imageSlug": "smrc-el-pedrgal_rxbeco_c_scale,w_",
       "imageSizes": [
-        "190",
-        "401",
-        "551",
-        "676",
+        "200",
+        "406",
+        "556",
+        "681",
         "1000"
       ],
       "featured": "true"
@@ -119,10 +121,12 @@
       "tastingNotes": "Big, bold, stone fruit flavours dominate this cup with a dash of fresh grape for good measure. The result is a syrupy treat of a coffee and a banging start to this year's Ecuador offerings!",
       "description": "We’re excited to kick off Ecuador season with a lovely little lot from Luis Abad in the canton of Zumba of the Zamora-Chichipe province. Luis’ farm, La Chorrera (The Stream), is only three hectares in size, but so are most of the farms in the area, the biggest of his neighbours farming only five hectares. To get to Luis’ farm you drive two hours from the nearest town, then walk for three hours through jungle and untouched forest; a highly biodiverse landscape with natural resources in abundance. In such a remote region coffee grows in harmony with its surroundings, and access to equipment and technology can be a challenge. We’re excited to see how the coffees from this exotic area of Ecuador will continue to improve and reach speciality coffee buyers all over the world!",
       "price": "17",
-      "imageSlug": "smcr-la-chorrera",
+      "imageSlug": "smrc-la-chorrera_csvuun_c_scale,w_",
       "imageSizes": [
-        "270",
-        "530",
+        "200",
+        "404",
+        "554",
+        "681",
         "1000"
       ],
       "featured": "false"
