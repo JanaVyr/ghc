@@ -16,6 +16,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.navbar-nav .nav-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.card-img-top {
+    min-height: 0.01px; //hack for IE11: https://github.com/twbs/bootstrap/issues/21885
+}
+
 .ghc-logo {
     width: 100%;
 }
@@ -26,13 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .ghc-mb--50px {
     margin-bottom: -50px;
-}
-
-.navbar-nav .nav-link {
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 .ghc-footer .active {
