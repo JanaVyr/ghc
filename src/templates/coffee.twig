@@ -18,9 +18,10 @@
                     {% if loop.index0%2 == 0 %}
                         <div class="w-100"></div>
                     {% endif %}
-                    <div class="card border-0 mb-4">
-                        <h2 class="h3 card-header text-uppercase">{{ coffee.name }} ({{ coffee.origin }})</h2>
+                    <div class="card border-0 mb-4" itemscope itemtype="http://ghc.jana.coreskill.tech/coffee">
+                        <h2 itemprop="name" class="h3 card-header text-uppercase">{{ coffee.name }} ({{ coffee.origin }})</h2>
                         <img
+                            itemprop='image'
                             class="card-img-top"
                             sizes="
                                 (min-width: 1200px) 520px,
@@ -36,8 +37,9 @@
                             src="/img/{{ coffee.imageSlug }}{{coffee.imageSizes|last}}.jpg"
                             alt="">
                         <div class="card-body bg-light">
-                            <p class="font-italic">{{ coffee.tastes|join(" / ")|lower }}</p>
-                            <p>{{ coffee.tastingNotes }}</p>
+                            <p itemprop="description" class="font-italic">{{ coffee.tastes|join(" / ")|lower }}</p>
+                            <p itemprop="description">{{ coffee.tastingNotes }}</p>
+                            <p itemprop="price" class="h4 text-right font-weight-bold">£{{ coffee.price }}</p>
                         </div>
                     </div>
                 {% endfor %}
