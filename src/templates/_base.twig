@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: http://ogp.me/ns#" lang="en">
 
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,15 @@
         <link rel="shortcut icon" href="/favicon.ico?v=1">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Generic Hipster Coffee offers specialty coffee and fresh food at 321 Ivy St, San Francisco, CA.">
         <title>{% block title %}Generic Hipster Coffee{% endblock %}</title>
+        {# open graph protocol #}
+        <meta property="og:title" content="Generic Hipster Coffee">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://ghc.jana.coreskill.tech">
+        <meta property="og:image" content="http://ghc.jana.coreskill.tech/img/counter-fb.jpg">
+        <meta property="og:site_name" content="Generic Hipster Coffee">
+        <meta property="og:description" content="Generic Hipster Coffee offers specialty coffee and fresh food at 321 Ivy St, San Francisco, CA.">
     </head>
 
     <body>
@@ -35,7 +43,7 @@
                     {% block navigation %}{% endblock %}
                 </ul>
             </nav>
-            <h5 class="text-uppercase font-weight-bold">#hipstersmakecoffee</h5>
+            <p class="h5 text-uppercase font-weight-bold">#hipstersmakecoffee</h5>
             <p class="mb-0">Follow us on <a href="#">Twitter</a> and <a href="#">Instagram</a></p>
         </footer>
         {#
