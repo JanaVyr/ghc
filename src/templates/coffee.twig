@@ -39,7 +39,7 @@
                         <div class="card-body bg-light">
                             <p itemprop="description" class="font-italic">{{ coffee.tastes|join(" / ")|lower }}</p>
                             <p itemprop="description">{{ coffee.tastingNotes }}</p>
-                            <p itemprop="price" class="h4 text-right font-weight-bold">£{{ coffee.price }}</p>
+                            <p itemprop="price" class="h4 text-right font-weight-bold">${{ (coffee.price * usdPerGbp)|number_format(1, '.', ',') }}</p>
                         </div>
                     </div>
                 {% endfor %}
