@@ -28,18 +28,18 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand navbar-light justify-content-between py-2 bg-light sticky-top">
+        <nav class="navbar navbar-expand navbar-light justify-content-between py-2 bg-light sticky-top d-print-flex">
             <div class="container flex-column flex-sm-row">
                 <a class="navbar-brand text-center" href="/">
                     <img src="/svg/logo.svg" class="ghc-logo" alt="">
                 </a>
-                <ul class="navbar-nav justify-content-center flex-row">
+                <ul class="navbar-nav justify-content-center flex-row d-print-none">
                     {% block navigation %}{% endblock %}
                 </ul>
             </div>
         </nav>
         {% block content %}{% endblock %}
-        <footer class="ghc-footer text-center bg-dark text-muted py-5">
+        <footer class="ghc-footer text-center bg-dark text-muted py-5 d-print-none">
             <nav class="pb-5">
                 <ul class="nav justify-content-center">
                     {% block navigation %}{% endblock %}
