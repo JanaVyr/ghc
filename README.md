@@ -55,6 +55,12 @@ Pro vytvoření všeho potřebného (v `/dist/` složce) spusť
 gulp build
 ```
 
+nebo pro vygenerování webu na produkci
+
+```shell
+gulp build:prod
+```
+
 ## CSS (Sass preprocessor)
 
 `index.css` kompilován (převáděn) z `src/scss/index.scss` pomocí [Sass](http://sass-lang.com/).
@@ -103,7 +109,7 @@ Pro nahrání na produkční server [ghc.jana.coreskill.tech](http://ghc.jana.co
 
 
 ```shell
-gulp deployProd
+gulp deploy:prod
 ```
 
 #### Surge.sh
