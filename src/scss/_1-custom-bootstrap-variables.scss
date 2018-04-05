@@ -33,7 +33,8 @@ $headings-line-height: 1.8;
 $headings-font-weight: 300;
 
 $gray-600: #ced4da;
-$blue: #0099ff;
+$blue: #44b3fd;
+$link-hover-color: $blue;
 
 $headings-margin-bottom: 0.4rem;
 $spacer: 1.6rem;
@@ -41,7 +42,7 @@ $spacer: 1.6rem;
 $navbar-nav-link-padding-x: 0.5rem;
 $nav-link-padding-x: 1rem;
 $navbar-padding-x: 0;
-$navbar-light-color: rgba(0, 0, 0, 0.5);
+$navbar-light-color: rgba(0, 0, 0, 0.66);
 $navbar-light-hover-color: #000;
 
 $card-cap-bg: #f0f1f2;
