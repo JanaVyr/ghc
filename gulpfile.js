@@ -222,7 +222,7 @@ gulp.task(
 );
 
 gulp.task(
-    'deployProd',
+    'deploy:prod',
     gulp.series(
         'build:prod',
         function(){
