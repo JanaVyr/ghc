@@ -103,7 +103,7 @@ Pro nahrání na produkční server [ghc.jana.coreskill.tech](http://ghc.jana.co
 
 
 ```shell
-gulp deployProd
+gulp deploy:prod
 ```
 
 #### Surge.sh
