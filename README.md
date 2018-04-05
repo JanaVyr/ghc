@@ -55,6 +55,12 @@ Pro vytvoření všeho potřebného (v `/dist/` složce) spusť
 gulp build
 ```
 
+nebo pro vygenerování webu na produkci
+
+```shell
+gulp build:prod
+```
+
 ## CSS (Sass preprocessor)
 
 `index.css` kompilován (převáděn) z `src/scss/index.scss` pomocí [Sass](http://sass-lang.com/).
