@@ -86,7 +86,7 @@ Složky a soubory z `/src/static/` jsou kopírovány do složky `/dist/`.
 
 Složky a soubory Bootstrapu, které nejsou potřeba, jsou zakomentované `/src/index.scss`.
 
-`/src/_custom-Bootstrap-variables.scss` obsahují pouze proměné, které jsou upravané.
+`/src/_custom-bootstrap-variables.scss` obsahují pouze proměné, které jsou upravané.
 
 Seznam podporovaných prohlížečů je v `gulpfile.js` (v nastavení autoprefixeru).
 
