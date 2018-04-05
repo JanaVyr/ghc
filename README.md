@@ -1,52 +1,55 @@
-# A basic template to develop a website based on Bootstrap 4
+# Generic Hipster Coffee - webová stránka stavěná na Bootstrap 4
 
-Includes:
+Zahrnuje:
 
-- **Bootstrap 4**: build responsive, mobile-first projects on the web with the world's most popular front-end component library
-- **Gulp 4**: task runner for running all of the following
-- **Sass compilation**: leverage the power of the most popular CSS extension language
-- **Sourcemaps** generation for easier Sass debugging
-- **Browsersync**: automatically reloads (or injects in case of CSS), browsers' when you change files 
-- **Autoprefixer**: parses CSS and adds vendor prefixes according to [caniuse.com]()
-- **Flexbugs fixes**: automatically fixes some of the [flexbugs](https://github.com/philipwalton/flexbugs) 
-- **CSSO**: CSS minifier with structural optimizations
-- **Twig.js**: JavaScript implementation of the Twig PHP templating language
-- **Surge.sh**: deploy static websites easily and for free
+- **Bootstrap 4**
+- **Gulp 4**
+- **Sass**
+- **Sourcemapy**
+- **Browsersync** 
+- **Autoprefixer**
+- **Automatické opravy chyb z Flexbugs** (https://github.com/philipwalton/flexbugs) 
+- **CSSO**
+- **Twig.js**
+- **Surge.sh**
 
 
-## First time installation
+## První instalace
 
-### Install latest [node.js](https://nodejs.org/)
+### Nainstaluj si poslední verzi [node.js](https://nodejs.org/)
 
-### Install `gulp-cli` globally 
+### Nainstaluj si globálně `gulp-cli` 
 
 ```shell
 npm install -g gulp-cli
 ```
 
-### Install all packages from `package.json` locally
+### Všechny balíčky `package.json` nainstaluj lokálně
 
 ```shell
 npm install
 ```
 
-_If you’re having errors in `node-gyp`, try [installing it globally](https://github.com/nodejs/node-gyp#installation)._
+_Kdyby při instalaci došlo k chybě v `node-gyp`, zkus package.json [instalovat globálně](https://github.com/nodejs/node-gyp#installation)._
+
+```shell
+npm install -g node-gyp
+```
 
 
-## Development
+## Vývoj
 
-To develop with automatic compilation and browser refreshing run
+Aby si mohl(a) pracovat na webu s automatickou kompilací a refrešováním, spusť si vždy
 
 ```shell
 gulp
 ```
 
-And see the result on `http://localhost:3000/`
+pro lokální náhled. (Web najdeš na `http://localhost:8585/`).
 
+## Vygenerování webu
 
-## Build
-
-To build everything once (in `/dist/` folder) 
+Pro vytvoření všeho potřebného (v `/dist/` složce) spusť 
 
 ```shell
 gulp build
@@ -54,52 +57,59 @@ gulp build
 
 ## CSS (Sass preprocessor)
 
-`index.css` is compiled from `src/scss/index.scss` by [Sass](http://sass-lang.com/).
+`index.css` kompilován (převáděn) z `src/scss/index.scss` pomocí [Sass](http://sass-lang.com/).
 
-You don't know _Scss_ syntax or don't want to use it? Just use plain CSS in `src/scss/_base.scss`.
-
-
-## HTML (Twig templates)
-
-HTML is generated from [Twig.js](https://github.com/twigjs/twig.js/) templates (JavaScript impementation of Twig templating language) in `src/templates`.
-
-You don't need to leverage the power of templates. You can just create plain HTML files with `*.twig` extension.  
-
-If you don't want a template to be turned into HTML file start it with `_`. Typically these are templates used for _include_ or _extend_.
-
-Documentation for [Twig](https://twig.symfony.com/doc/2.x/templates.html).
-
-_Warning: [Twig.js doesn't implement 100% of Twig](https://github.com/twigjs/twig.js/wiki/Implementation-Notes)._
-
-If you need some data to be available in all templates, use `templates/data.json` for that.
+Pokud se nekamarádíš s Scss syntaxí, používej v `src/scss/_base.scss` obyčejné CSS.
 
 
-## Static files (JavaScript, images, …)
+## HTML (Šablony Twig)
 
-Folders and files from `/src/static/` are simply copied directly to `/dist/` folder.
+HTML je generováno z [twigových](https://github.com/twigjs/twig.js/) šablon, které jsou v `src/templates`.
+
+Stačí vytvořit jednoduché soubory HTML s příponou `* .twig`.  
+
+Pokud nechceš, aby šablona byla převedena na HTML soubor, pojmenuj ji s `_` na začátku jména souboru. Obvykle se jedná o šablony používané pro _include_ nebo _extend_.
+
+Dokumentace [Twig](https://twig.symfony.com/doc/2.x/templates.html).
+
+_Upozornění: [Twig.js neinplementuje 100% z Twigu](https://github.com/twigjs/twig.js/wiki/Implementation-Notes)._
+
+Pokud potřebuješ, aby nějaká data byla dostupná ve všech souborech, použij `templates/data.json`.
+
+
+## Soubory static (JavaScript, images, …)
+
+Složky a soubory z `/src/static/` jsou kopírovány do složky `/dist/`.
 
 
 ### Bootstrap
 
-You can comment out Bootstrap components you don't need in `/src/index.scss`.
+Složky a soubory Bootstrapu, které nejsou potřeba, jsou zakomentované `/src/index.scss`.
 
-`/src/_custom-bootstrap-variables.scss` contains only customized Bootstrap variables.
+`/src/_custom-bootstrap-variables.scss` obsahují pouze proměné, které jsou upravané.
 
-See `gulpfile.js` for supported browsers.
+Seznam podporovaných prohlížečů je v `gulpfile.js` (v nastavení autoprefixeru).
 
 
-### Deployment
+### Nasazení
 
-Upload everything in `/dist/` folder to the server.
+Všechno ze složky `/dist/` se nahraje na server [ghc-j.surge.sh](https://ghc-j.surge.sh)
+
+```shell
+gulp deploy
+```
+
+Pro nahrání na produkční server [ghc.jana.coreskill.tech](http://ghc.jana.coreskill.tech) použij
+
+
+```shell
+gulp deployProd
+```
 
 #### Surge.sh
 
-You can use [surge.sh](https://surge.sh) free service for that.
+Můžeš použít [surge.sh](https://surge.sh) zcela zadarmo.
 
-1. Install surge client `npm install --global surge`.
-1. Run `surge` manually once in `/dist`: you will create an account with surge.sh.
-1. Set your own domain in `gulpfile.js` (replace `https://my-first-website.surge.sh`).
-1. From now on run `gulp deploy` whenever you want to publish a new version.
+- Instaluj si surge `npm install --global surge`.
 
-If you want multiple people to be able to deploy to the same domain, run `surge --add mail.your.collaborator.used.to.register.with.surge@example.com` for each.
- 
+Pokud chceš změny nasadit, řekni mi o přístup.
